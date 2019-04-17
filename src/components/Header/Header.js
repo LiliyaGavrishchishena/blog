@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
 import Nav from './Nav';
-import appLogo from '../../assets/graphics/logo.svg';
+import appLogo from '../../assets/graphics/logo_orange.svg';
 import navItems from '../../configs/main-nav';
 import styles from './Header.module.css';
 
