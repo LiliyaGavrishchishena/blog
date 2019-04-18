@@ -16,7 +16,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header className={styles.header}>
+      <header className={styles.header} onScroll={this.handleScroll}>
         <div className={styles.wrap}>
           <div className={styles.logo}>
             <Logo image={appLogo} />
