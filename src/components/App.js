@@ -29,6 +29,20 @@ const AsyncContactsPage = lazy(() =>
   import('../pages/AsyncContactsPage' /* webpackChunkName: "contacts-page" */),
 );
 
+const AsyncConditionsPage = lazy(() =>
+  import(
+    '../pages/AsyncConditionsPage' /* webpackChunkName: "conditions-page" */
+  ),
+);
+
+const AsyncPrivacyPage = lazy(() =>
+  import('../pages/AsyncPrivacyPage' /* webpackChunkName: "privacy-page" */),
+);
+
+const AsyncCookiesPage = lazy(() =>
+  import('../pages/AsyncCookiesPage' /* webpackChunkName: "cookies-page" */),
+);
+
 class App extends Component {
   state = {};
 
@@ -37,7 +51,6 @@ class App extends Component {
       <div>
         <Header />
         <Banner />
-        <HomePage />
         <Suspense fallback={Spiner}>
           <Switch>
             <Route exact path={routes.MAIN} component={HomePage} />
@@ -45,6 +58,13 @@ class App extends Component {
             <Route exact path={routes.SERVICES} component={AsyncServicesPage} />
             <Route exact path={routes.ABOUT} component={AsyncAboutPage} />
             <Route exact path={routes.CONTACT} component={AsyncContactsPage} />
+            <Route
+              exact
+              path={routes.CONDITIONS}
+              component={AsyncConditionsPage}
+            />
+            <Route exact path={routes.PRIVACY} component={AsyncPrivacyPage} />
+            <Route exact path={routes.COOKIES} component={AsyncCookiesPage} />
             <Redirect to="/" />
           </Switch>
         </Suspense>

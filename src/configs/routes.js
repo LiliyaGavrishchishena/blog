@@ -5,4 +5,7 @@ export default Object.freeze({
   SERVICES: '/services',
   ABOUT: '/about',
   CONTACT: '/contact',
+  CONDITIONS: '/conditions',
+  PRIVACY: '/privacy',
+  COOKIES: '/cookies',
 });

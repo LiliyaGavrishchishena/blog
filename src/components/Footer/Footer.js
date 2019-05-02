@@ -1,6 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+// components
+import FooterNav from './FooterNav';
+// styles
 import styles from './Footer.module.css';
+// configs
+import footerItems from '../../configs/footer-nav';
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -14,50 +19,7 @@ const Footer = () => (
 
         <div className={styles.right}>
           <div className={styles.footer_nav}>
-            <ul className={styles.list}>
-              <li>
-                <Link className={styles.link} to="/policies/terms">
-                  Terms and conditions
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} to="/policies/privacy">
-                  Privacy policy
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} to="/policies/cookies">
-                  Cookies policy
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.social_icons}>
-            <ul>
-              <li>
-                <a
-                  href="https://www.facebook.com/SimpleTut"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className={styles.fab_fa_facebook_f} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/reactjs-starter-kit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className={styles.fab_fa_github} />
-                </a>
-              </li>
-            </ul>
+            <FooterNav items={footerItems} />
           </div>
         </div>
       </div>
