@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-
-import App from './components/App';
-
+// styles
 import './index.css';
+// components
+import App from './components/App';
 
 ReactDOM.render(
   <BrowserRouter>
