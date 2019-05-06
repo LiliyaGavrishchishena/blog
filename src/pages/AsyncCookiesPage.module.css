@@ -1,0 +1,21 @@
+.cookies {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #010000;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: 0 0 1rem;
+  line-height: 2.4rem;
+}
